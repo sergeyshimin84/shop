@@ -1,0 +1,132 @@
+.container {
+    width: 1600px;
+    padding: auto;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0 41px 0 231px;
+}
+
+.forma {
+    margin: 0 25px 0 0;
+}
+
+.account {
+    margin: 0 42px 0 0;
+}
+
+.cart {
+    margin: 0 240px 0 0;
+}
+
+.cartIconWrap span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #F16D7F;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    right: 250px;
+    top: -19px;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.brandWrap {
+    width: 100%;
+    height: 764px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F1E4E6;
+}
+
+.brandLeftWrap img {
+    display: block;
+    width: 100%;
+}
+
+.brandPromoWrap {
+    border-left: 12px solid #f16d7f;
+    padding-left: 16px;
+    height: 92px;
+    margin: 0 0 0 63px;
+}
+
+.brandPromoWrap div:first-child {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.brandPromoWrap div:last-child {
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.brandPromoWrap span:first-child {
+    color: #F16D7F;
+}
+
+.offerClothes {
+    display: flex;
+    flex-direction: row;
+    margin: 65px 0 0 230px;
+}
+
+.offerClothesMen {
+    margin: 0 30px 0 30px;
+}
+
+.offerAccesories {
+    position: relative;
+}
+
+.offer img {
+    background: #211616B2;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerAccesories img {
+    margin: 0 0 0 230px;
+}
+
+.offer div {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer span {
+    position: relative;
+    color: #F16D7F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
