@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .container {
     width: 1600px;
     padding: auto;
@@ -51,6 +57,8 @@
     flex-direction: row;
     align-items: center;
     background-color: #F1E4E6;
+    margin: 0;
+    padding: 0;
 }
 
 .brandLeftWrap img {
@@ -88,45 +96,317 @@
     color: #F16D7F;
 }
 
-.offerClothes {
-    display: flex;
-    flex-direction: row;
-    margin: 65px 0 0 230px;
+.offer {
+    display: grid;
+    justify-content: center;
+    margin: 65px auto 96px;
 }
 
-.offerClothesMen {
-    margin: 0 30px 0 30px;
+@media (min-width: 768px) {
+    .offer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 260px 180px;
+        gap: 30px;
+        max-width: 1140px;
+    }
+
+    .offerAccesories {
+        grid-column: 1/-1;
+    }
 }
 
-.offerAccesories {
+.offer > div {
     position: relative;
 }
 
 .offer img {
-    background: #211616B2;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.offerAccesories img {
-    margin: 0 0 0 230px;
-}
-
-.offer div {
+.offerTitle {
     position: relative;
+    z-index: 1;
     color: white;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 }
 
-.offer span {
-    position: relative;
-    color: #F16D7F;
+.offerTitleBottom {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+}
+
+.feturedItems {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;    
+    margin-top: 96px;
 }
+
+.feturedItems > span {
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+}
+
+.feturedItems > p {
+    color: #9F9F9F;
+}
+
+.itemsCatalog {
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.itemsCards {
+    width: 360px;
+    height: 581px;
+    margin: 30px auto;
+}
+
+.itemsCards span {
+    color: #F16D7F;
+}
+
+.itemsCards img {
+    align-items: flex-start;
+}
+
+.featuredBrowseBtn {
+    border: 1px solid #ff6a6a;
+    padding: 15px 40px;
+    
+    display: block;
+    background: none;
+    color: #f26376;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 48px auto 95px;
+}
+
+.featuredBrowseBtn:hover {
+    color: white;
+    background: #ff6a6a;
+}
+
+.services {
+    background: #222224;
+    padding-top: 48px;
+    padding-bottom: 81px;
+}
+
+@media (min-width: 1200px) {
+    .services {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.services .container {
+    display: grid;
+    gap: 46px;
+}
+
+@media (min-width: 1200px) {
+    .services .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+.serivceUnit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesTitle,
+.servicesText {
+    color: #fbfbfb;
+}
+
+.servicesTitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.servicesText {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 340px;
+}
+
+.container > img {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+}
+
+.containerSubscribe {
+    position: relative;
+    z-index: auto;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 87px;
+    padding-bottom: 120px;
+}
+    
+.subscribeLeft {
+    text-align: center;
+    width: 359px;
+}
+
+.subscribeLeft > img {
+    padding: 0 0 32px;
+}
+
+.subscribeRight {
+    text-align: center;
+    padding: 0 0 32px;
+}
+
+.subscribeTitle {
+    padding: 63px 0 0;
+}
+
+.subscribeText {
+    padding: 0 0 32px;
+}
+
+.subscribeForm {
+    height: 47px;
+}
+
+.subscribeUserText {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+}
+
+.subscribeTitle {
+    font-weight: 700;
+    font-size: 24px;
+    color: #222224;
+}
+
+.subscribeText {
+    font-size: 14px;
+    color: #222224;
+    margin-bottom: 22px;
+}
+    
+
+.subscribeForm input {
+    height: inherit;
+    background: #e1e1e1;
+    border: none;
+    padding: 6px 21px;
+    box-sizing: border-box;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    width: 256px;
+}
+
+.subscribeForm input::-webkit-input-placeholder {
+    color: #222224;
+    font-family: inherit;
+    opacity: 0.67;
+}
+.subscribeForm input::-moz-placeholder {
+    color: #222224;
+    font-family: inherit;
+    opacity: 0.67;
+}
+.subscribeForm input:-ms-input-placeholder {
+    color: #222224;
+    font-family: inherit;
+    opacity: 0.67;
+}
+.subscribeForm input:-moz-placeholder {
+    color: #222224;
+    font-family: inherit;
+    opacity: 0.67;
+}
+
+.subscribeForm button {
+    height: inherit;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 17px;
+    background: #f16d7f;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding: 0 17px;
+}
+
+.footer {
+    background: #222224;
+    width: 100%;
+    height: 79px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 235px;
+    padding-right: 235px;
+}
+
+.footerLeft {
+    display: flex;
+    font-family: Lato;
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    position: relative;
+}
+
+.footerRight {
+    display: flex;
+    position: relative;
+}
+
+.footerRight a {
+    color: black;
+    background: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+    
