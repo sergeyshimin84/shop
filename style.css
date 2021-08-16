@@ -1,7 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .container {
-    width: 1600px;
     padding: auto;
+    margin: 0 auto;
 }
+
+/* ------------------header---------------------- */
 
 .header {
     width: 100%;
@@ -13,23 +21,23 @@
     justify-content: space-between;
 }
 
-.logo {
+.header-left-logo {
     margin: 0 41px 0 231px;
 }
 
-.forma {
+.header-right-forma {
     margin: 0 25px 0 0;
 }
 
-.account {
+.header-right-account {
     margin: 0 42px 0 0;
 }
 
-.cart {
+.header-right-cart {
     margin: 0 240px 0 0;
 }
 
-.cartIconWrap span {
+.header-right-cart-number {
     display: inline-block;
     width: 19px;
     height: 19px;
@@ -38,34 +46,41 @@
     border-radius: 50%;
     position: relative;
     text-align: center;
-    right: 250px;
     top: -19px;
+    margin-left: -10px;
     font-size: 12px;
     line-height: 19px;
 }
 
-.brandWrap {
+/* =====================header====================== */
+
+/* ---------------------brand----------------------- */
+
+.brand {
     width: 100%;
     height: 764px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     background-color: #F1E4E6;
+    margin: 0;
+    padding: 0;
 }
 
-.brandLeftWrap img {
+.brand-left img {
     display: block;
     width: 100%;
 }
 
-.brandPromoWrap {
+.brand-right-promo {
     border-left: 12px solid #f16d7f;
     padding-left: 16px;
     height: 92px;
     margin: 0 0 0 63px;
 }
 
-.brandPromoWrap div:first-child {
+.brand-right-promo div:first-child {
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
@@ -74,7 +89,7 @@
     color: #222222;
 }
 
-.brandPromoWrap div:last-child {
+.brand-right-promo div:last-child {
     font-family: Lato;
     font-size: 32px;
     font-style: normal;
@@ -84,49 +99,336 @@
     text-align: left;
 }
 
-.brandPromoWrap span:first-child {
+.brand-right-promo span:first-child {
     color: #F16D7F;
 }
 
-.offerClothes {
+/* =====================brand====================== */
+
+/* ---------------------title---------------------- */
+
+.title {
+    display: grid;
+    justify-content: center;
+    margin: 65px auto 96px;
+}
+
+@media (min-width: 768px) {
+    .title {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 260px 180px;
+        gap: 30px;
+        max-width: 1140px;
+    }
+
+    .title div:nth-child(4) {
+        grid-column: 1/-1;
+    }
+}
+
+.title > div {
+    position: relative;
+}
+
+.title img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.title-card-offer {
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.title-card-offer-bottom {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+}
+
+/* ==================title==================== */
+
+/* ------------------items-------------------- */
+
+.items {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 96px;
+}
+
+.items > span {
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+}
+
+.items > p {
+    color: #9F9F9F;
+}
+
+.items-catalog {
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.items-catalog-card {
+    width: 360px;
+    height: 581px;
+    margin: 30px auto;
+}
+
+.items-catalog-card span {
+    color: #F16D7F;
+}
+
+.items-catalog-card img {
+    align-items: flex-start;
+}
+
+.items-catalog-button {
+    border: 1px solid #ff6a6a;
+    padding: 15px 40px;
+    
+    display: block;
+    background: none;
+    color: #f26376;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 48px auto 95px;
+}
+
+.items-catalog-button:hover {
+    color: white;
+    background: #ff6a6a;
+}
+
+/* ====================items=================== */
+
+/* --------------------service----------------- */
+
+.service {
+    background: #222224;
+    padding-top: 48px;
+    padding-bottom: 81px;
+}
+
+@media (min-width: 1200px) {
+    .service {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.service .service-block {
+    display: grid;
+    gap: 46px;
+}
+
+@media (min-width: 1200px) {
+    .service .service-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+.service-block-unit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-block-title,
+.service-block-txt {
+    color: #fbfbfb;
+}
+
+.service-block-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.service-block-txt {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 340px;
+}
+
+.service-block > img {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+}
+
+/* =================service================= */
+
+/* -----------------subscribe--------------- */
+
+.subscribe-block {
+    position: relative;
+    z-index: auto;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 87px;
+    padding-bottom: 120px;
+    background-image: url(img/photo\ subscribe.jpg);
+    background-size: cover;
+}
+    
+.subscribe-block-left {
+    text-align: center;
+    width: 359px;
+}
+
+.subscribe-block-left > img {
+    padding: 0 0 32px;
+}
+
+.subscribe-block-right {
+    text-align: center;
+    padding: 0 0 32px;
+}
+
+.subscribe-block-right-title {
+    padding: 63px 0 0;
+}
+
+.subscribe-block-right-txt {
+    padding: 0 0 32px;
+}
+
+.subscribe-block-right-button {
+    height: 47px;
+}
+
+.subscribe-block-left-txt {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+}
+
+.subscribe-block-right-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #222224;
+}
+
+.subscribe-block-right-txt {
+    font-size: 14px;
+    color: #222224;
+    margin-bottom: 22px;
+}
+    
+
+.subscribe-block-right-button input {
+    height: inherit;
+    background: #e1e1e1;
+    border: none;
+    padding: 6px 21px;
+    box-sizing: border-box;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    width: 256px;
+}
+
+.subscribe-block-right-button input::-webkit-input-placeholder {
+    color: #222224;
+    font-family: inherit;
+    opacity: 0.67;
+}
+.subscribe-block-right-button input::-moz-placeholder {
+    color: #222224;
+    font-family: inherit;
+    opacity: 0.67;
+}
+.subscribe-block-right-button input:-ms-input-placeholder {
+    color: #222224;
+    font-family: inherit;
+    opacity: 0.67;
+}
+.subscribe-block-right-button input:-moz-placeholder {
+    color: #222224;
+    font-family: inherit;
+    opacity: 0.67;
+}
+
+.subscribe-block-right-button button {
+    height: inherit;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 17px;
+    background: #f16d7f;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding: 0 17px;
+}
+
+/* =================subscribe================= */
+
+/* -------------------footer------------------ */
+
+    .footer {
+    background: #222224;
+    width: 100%;
+    height: 79px;
     display: flex;
     flex-direction: row;
-    margin: 65px 0 0 230px;
-}
-
-.offerClothesMen {
-    margin: 0 30px 0 30px;
-}
-
-.offerAccesories {
-    position: relative;
-}
-
-.offer img {
-    background: #211616B2;
-    object-fit: cover;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 235px;
+    padding-right: 235px;
 }
 
-.offerAccesories img {
-    margin: 0 0 0 230px;
-}
-
-.offer div {
-    position: relative;
-    color: white;
+.footer-txt {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-family: Lato;
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    position: relative;
 }
 
-.offer span {
-    position: relative;
-    color: #F16D7F;
+.footer-socials {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
 }
+
+.footer-socials p {
+    margin: 0 7px 0 0;
+}
+
+/* ==================footer=================== */
