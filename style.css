@@ -60,7 +60,6 @@
 /* ---------------------brand----------------------- */
 
 .brand {
-    /* width: 100%; */
     max-height: 764px;
     min-height: 368px;
     display: flex;
@@ -499,7 +498,6 @@
     margin-bottom: 22px;
 }
     
-
 .subscribe-block-right-button input {
     height: inherit;
     background: #e1e1e1;
@@ -628,7 +626,7 @@
         margin-left: 0;
     }
 
-    .items > div > div:nth-child(3) {
+    .items-catalog-card_none {
         display: none;
     }
 
@@ -638,10 +636,7 @@
 
     .footer {
         padding: 0;
-        
     }
-
-
 }
 
 @media (max-width: 375px) {
@@ -671,9 +666,17 @@
         margin-right: 0;
     }
 
+    .arrivals-block-right {
+        margin-top: 32px;
+    }
+
     .arrivals {
-        flex-direction: column;
         justify-content: center;
+        display: flex;
+    }
+
+    .arrivals-block {
+        display: block;
     }
 
     .title {
@@ -688,8 +691,24 @@
         display: none;
     }
 
+    .items-filter-list > li > img {
+        background-image: url(img/for\ catalog/Vector_max.png)
+    }
+
+
     .items-filter-menu {
         margin-left: 61px;
+        font-family: Lato;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .items-filter-menu span {
+        margin-left: 0;
     }
 
     .footer {
