@@ -70,6 +70,11 @@
     padding: 0;
 }
 
+.brand-left {
+    max-width: 50%;
+    max-height: 764px;
+}
+
 .brand-left img {
     display: block;
     width: 100%;
@@ -80,24 +85,24 @@
     padding-left: 16px;
     height: 92px;
     margin-left: 63px;
-    min-width: 311px;
+    min-width: 405px;
 }
 
 .brand-right-promo div:first-child {
     font-family: Lato;
     font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 57px;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
     color: #222222;
 }
 
 .brand-right-promo div:last-child {
     font-family: Lato;
-    font-size: 32px;
+    font-size: 31px;
     font-style: normal;
     font-weight: 700;
-    line-height: 38px;
+    line-height: 37px;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -157,30 +162,30 @@
 
 /* Catalog==============arrivals=================== */
 
-/* ---------------------title---------------------- */
+/* ---------------------categories---------------------- */
 
-.title {
+.categories {
     display: grid;
     justify-content: center;
     margin: 65px auto 96px;
 }
 
-.title {
+.categories {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 260px 180px;
     gap: 30px;
     max-width: 1140px;
 }
 
-.title div:nth-child(4) {
+.categories div:nth-child(4) {
     grid-column: 1/-1;
 }
 
-.title > div {
+.categories > div {
     position: relative;
 }
 
-.title img {
+.categories img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -189,7 +194,7 @@
     top: 0;
 }
 
-.title-card-offer {
+.categories-card-offer {
     position: relative;
     z-index: 1;
     color: white;
@@ -202,14 +207,14 @@
     font-size: 16px;
 }
 
-.title-card-offer-bottom {
+.categories-card-offer-bottom {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #f16d7f;
 }
 
-/* ==================title==================== */
+/* ==================categories==================== */
 
 /* ------------------items-------------------- */
 
@@ -668,10 +673,9 @@
     .brand-right-promo div:last-child {
         font-size: 24px;
         line-height: 28px;
-       
     }
 
-    .title {
+    .categories {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 167px 116px;
         gap: 20px;
@@ -709,6 +713,16 @@
         align-items: center;
     }
 
+    .brand-right-promo div:first-child {
+        font-size: 37px;
+        line-height: 44px;
+    }
+
+    .brand-right-promo div:last-child {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     .brand-right-promo {
         margin-left: 0;
         display: flex;
@@ -738,7 +752,7 @@
         display: block;
     }
 
-    .title {
+    .categories {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 247px 247px 247px 111px;
         row-gap: 32px;
