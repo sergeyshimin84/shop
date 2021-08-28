@@ -254,6 +254,27 @@
     text-align: left;
 }
 
+.arrivals-block-right > ul {
+    display: flex;
+    text-decoration: none;
+}
+
+.arrivals-block-right > ul > li {
+    list-style: none;
+}
+
+.arrivals-block-right > ul li+li:before {
+    padding-left: 5px;
+    padding-right: 5px;
+    content: "/";
+    color: #636363;
+}
+
+.arrivals-block-right > ul > li > a {
+    text-decoration: none;
+    color: #636363;
+}
+
 .arrivals-block-right {
     font-family: Lato;
     font-size: 14px;
@@ -265,7 +286,7 @@
     margin: auto;
 }
 
-.arrivals-block-right > p > span {
+.arrivals-block-right > ul > li:nth-child(3) > a {
     color: #F16D7F;
 }
 
