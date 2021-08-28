@@ -110,11 +110,58 @@
 
     <main>
 
+        <!-- <!—Тут находится наш главный блок-обертка. Так как слайды карусели получают высоту от родителя, мы вынуждены
+            точно задать их высоту. -->
+        <div class="carousel-wrapper" style="height: 777px;">
+            <!-- <!—Карусель использует обычные ссылки для ротации. Ссылки используют свойство display: none; тегов span
+                    для того, чтобы наша страница не вела себя, как при нажатии на обычную ссылку.--> -->
+
+            <span id="target-item-1"></span>
+            <span id="target-item-2"></span>
+            <span id="target-item-3"></span>
+
+            <!-- <!—Тут располагаются слайды карусели. У каждого элемента есть класс 'carousel-item' , который мы
+                        используем для общих стилей, а так же класс item-#, который используется для контроля
+                        прозрачности. Прозрачность зависит от того, на каком target-item-# сейчас фокус-->
+            <div class="carousel-item item-1">
+                <!-- <!—Сюда можно добавить любой контент, только убедитесь, что ваш класс .carousel-wrapper
+                                имеет достаточную высоту для хранения всего содержимого.-->
+
+                <h2>Слайд 1</h2>
+                <p><img src="img/product/layer.png" alt=""></p>
+
+                <!-- <!—Тут ссылки для управления каруселью! Убедитесь, что каждый атрибут href ссылается на
+                                    верный target-item-# так что карусель зацикливается.-->
+
+
+                <a class="arrow arrow-prev" href="#target-item-3"></a>
+                <a class="arrow arrow-next" href="#target-item-2"></a>
+            </div>
+
+            <!-- <!—Тут еще парочка div’ов. Заметили класс 'light' ? Royalblue достаточно темный цвет для заднего
+                            фона, и если слайд карусели имеет этот класс, мы можем добавить CSS правило, чтобы сделать
+                            текст белым,.-->
+
+            <div class="carousel-item item-2 light" style="background-color: royalblue;">
+                <h2>Слайд 2</h2>
+                <p>Контент.</p>
+                <a class="arrow arrow-prev" href="#target-item-1"></a>
+                <a class="arrow arrow-next" href="#target-item-3"></a>
+            </div>
+            <div class="carousel-item item-3">
+                <h2>Item 3</h2>
+                <p>Content goes here.</p>
+                <a class="arrow arrow-prev" href="#target-item-2"></a>
+                <a class="arrow arrow-next" href="#target-item-1"></a>
+            </div>
+        </div>
+
         <div class="collection-box">
             <span class="collection-heading">WOMEN COLLECTION</span>
             <hr class="collection-line-up">
             <span class="collection-slogan">MOSCHINO CHEAP AND CHIC</span>
-            <p class="collection-txt">Compellingly actualize fully researched processes before proactive outsourcing.
+            <p class="collection-txt">Compellingly actualize fully researched processes before proactive
+                outsourcing.
                 Progressively
                 syndicate collaborative architectures before cutting-edge services.Completely visualize parallel
                 core competencies rather than exceptional portals.</p>
@@ -127,7 +174,7 @@
                     <li class="collection-menu-sublist">QUANTITY</li>
                 </ul>
             </nav>
-            <button class="collection-btn"><img src="img/cart_pink.png" alt=""> Add to Cart</button>
+            <button class="collection-btn"><img src="img/cart-pink.png" alt=""> Add to Cart</button>
         </div>
 
         <div class="items">
@@ -137,7 +184,8 @@
                     <img src="img/items3.jpg" alt="">
                     <div class="items-catalog-card-txt">
                         <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
-                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
+                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional
+                            tailoring,
                             Australian arbiter of cool Kym
                             Ellery
                             teams
@@ -150,7 +198,8 @@
                     <img src="img/items4.jpg" alt="">
                     <div class="items-catalog-card-txt">
                         <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
-                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
+                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional
+                            tailoring,
                             Australian arbiter of cool Kym
                             Ellery
                             teams
@@ -163,7 +212,8 @@
                     <img src="img/items6.png" alt="">
                     <div class="items-catalog-card-txt">
                         <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
-                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
+                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional
+                            tailoring,
                             Australian arbiter of cool Kym
                             Ellery
                             teams
