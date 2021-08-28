@@ -72,7 +72,7 @@
     opacity: 0;
 }
 
-#menu-switch:checked ~ .menu__btn > span::before {
+#menu-switch:checked ~ .menu-btn > span::before {
     top: 0;
     transform: rotate(0);
 }
@@ -670,48 +670,101 @@
 
 /* Catalog-------------items------------------- */
 
+.items-container {
+    width: 100%;
+    max-width: 1140px;
+}
+
+#filter-switch {
+    opacity: 0;
+}
+
+#filter-switch:checked ~ .items-filter-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#filter-switch:checked ~ .items-filter-box {
+    visibility: visible;
+}
+
 .items-filter {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    position: absolute;
 }
 
-.items-filter-menu {
-    display: flex;
-    margin-left: 276px;
-    list-style-type: none;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
+.items-filter-btn > span:hover {
+    color: #EF5B70;
+}
+
+.items-filter-box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    width: 360px;
+    height: 100%;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
     text-align: left;
-    color: #6F6E6E;
+    background-color: #FFFFFF;
+    z-index: 5;
 }
 
-.items-filter-menu span {
-    margin-left: 28px;
+.items-filter-box {
+    transition-duration: .25s;
 }
 
-.items-filter img {
-    width: 15px;
-    height: 10px;
-    margin-left: 10px;
+.items-filter-box a {
+    text-decoration: none;
 }
 
-.items-filter-list {
-    margin-left: -380px;
+.items-filter-list > li {
+    margin-top: 11px;
+}
+
+.items-filter-btn > span {
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #000000;
-    list-style-type: none;
 }
+
+.items-filter-list {
+    display: block;
+}
+
+.items-filter-list-title {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+
+
+.items-filter-list-title:hover {
+    color: #EF5B70;
+}
+
+.items-filter-sublist {
+    list-style: none;
+    padding-left: 34px;
+}
+
+.items-filter-sublist > a {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+}
+
 
 .items-catalog-pages {
     width: 284px;
