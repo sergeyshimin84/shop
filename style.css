@@ -101,6 +101,7 @@
     list-style: none;
     text-align: left;
     background-color: #FFFFFF;
+    z-index: 5;
 }
 
 .menu-box {
@@ -455,7 +456,7 @@
 }
 
 .collection-menu {
-    max-width: 373px;
+    max-width: 400px;
 }
 
 .collection-menu-list {
@@ -463,6 +464,12 @@
     flex-direction: row;
     list-style: none;
     margin-top: 65px;
+    justify-content: space-between;
+}
+
+.collection-menu-list li:after {
+    padding: 0 23px 0 8px;
+    content: url(img/catalog/vector2.png);
 }
 
 .collection-menu-sublist {
@@ -679,10 +686,10 @@
     opacity: 0;
 }
 
-#filter-switch:checked ~ .items-filter-btn > span::before {
+/* #filter-switch:checked ~ .items-filter-btn > span:before {
     top: 0;
     transform: rotate(0);
-}
+} */
 
 #filter-switch:checked ~ .items-filter-box {
     visibility: visible;
@@ -692,8 +699,12 @@
     position: absolute;
 }
 
-.items-filter-btn > span:hover {
+.items-filter-btn > span:active {
     color: #EF5B70;
+}
+
+.items-filter-btn > img:active {
+    background-image: url(img/catalog/vector-pink.png);
 }
 
 .items-filter-box {
@@ -718,6 +729,11 @@
     text-decoration: none;
 }
 
+.items-filter-list {
+    display: block;
+    margin-top: 32px;
+}
+
 .items-filter-list > li {
     margin-top: 11px;
 }
@@ -731,10 +747,6 @@
     color: #000000;
 }
 
-.items-filter-list {
-    display: block;
-}
-
 .items-filter-list-title {
     font-family: Lato;
     font-size: 14px;
@@ -742,11 +754,15 @@
     font-weight: 400;
     line-height: 17px;
     color: #6F6E6E;
+    margin-left: 17px;
 }
 
+.items-filter-list-title {
+    border-left: 5px solid #EF5B70;
+    padding-left: 11px;
+}
 
-
-.items-filter-list-title:hover {
+.items-filter-list-title > span:hover {
     color: #EF5B70;
 }
 
@@ -765,6 +781,38 @@
     text-decoration: none;
 }
 
+#items-menu-switch {
+    opacity: 0;
+}
+
+#items-menu-switch:checked ~ .items-menu-form {
+    visibility: visible;
+}
+
+.items-menu-form {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    width: 79px;
+    height: 103px;
+    text-align: left;
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
+.items-menu-box {
+    display: flex;
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    right: 43%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6F6E6E;
+}
 
 .items-catalog-pages {
     width: 284px;
