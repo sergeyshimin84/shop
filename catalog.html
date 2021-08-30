@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Index</title>
+    <title>Catalog</title>
 </head>
 
 <body class="container">
@@ -99,69 +99,80 @@
         </div>
     </header>
 
-    <div class="brand">
-        <div class="brand-left">
-            <img src="img/brand-man.png" alt="">
-        </div>
-        <div class="brand-right">
-            <div class="brand-right-promo">
-                <div>THE BRAND</div>
-                <div>OF LUXERIOUS <span>FASHION</span></div>
+    <div class="arrivals">
+        <div class="arrivals-block">
+            <h1 class="arrivals-block-left">NEW ARRIVALS </h1>
+            <div class="arrivals-block-right">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">NEW ARRIVALS</a></li>
+                </ul>
             </div>
         </div>
     </div>
 
     <main>
-        <div class="categories">
-            <div class="categories-card">
-                <img src="img/offer-women.jpg" alt="">
-                <div class="categories-card-offer">
-                    <div>
-                        30% OFF
-                    </div>
-                    <div class="categories-card-offer-bottom">
-                        FOR WOMEN
-                    </div>
-                </div>
-            </div>
-            <div class="categories-card">
-                <img src="img/offer-men.jpg" alt="">
-                <div class="categories-card-offer">
-                    <div>
-                        HOT DEAL
-                    </div>
-                    <div class="categories-card-offer-bottom">
-                        FOR MEN
-                    </div>
-                </div>
-            </div>
-            <div class="categories-card">
-                <img src="img/offer-kids.jpg" alt="">
-                <div class="categories-card-offer">
-                    <div>
-                        NEW ARRIVALS
-                    </div>
-                    <div class="categories-card-offer-bottom">
-                        FOR KIDS
-                    </div>
-                </div>
-            </div>
-            <div class="categories-card">
-                <img src="img/offer-accesories.jpg" alt="">
-                <div class="categories-card-offer">
-                    <div>
-                        LUXIROUS & TRENDY
-                    </div>
-                    <div class="categories-card-offer-bottom">
-                        ACCESORIES
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="items">
-            <span>Fetured Items</span>
-            <p>Shop for items based on what we featured in this week</p>
+            <div class="items-container">
+                <nav class="items-filter">
+                    <input id="filter-switch" type="checkbox">
+                    <label class="items-filter-btn" for="filter-switch">
+                        <span>FILTER</span>
+                        <img src="img/catalog/vector.png" alt="">
+                    </label>
+                    <div class="items-filter-box">
+                        <ul class="items-filter-list">
+                            <a href="#" class="items-filter-list-close-btn"><span
+                                    class="items-filter-list-title">CATEGORY</span></a>
+                            <li class="items-filter-sublist">
+                                <a href="#">Accessories</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Bags</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Denim</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Hoodies & Sweatshirts</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Jackets & Coats</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Polos</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Shirts</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Sweaters & Knits</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">T-Shirts</a>
+                            </li>
+                            <li class="items-filter-sublist">
+                                <a href="#">Tanks</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <a href="#"><span class="items-filter-list-title">BRAND</span></a>
+                        </ul>
+                        <ul>
+                            <a href="#"><span class="items-filter-list-title">DESIGNER</span></a>
+                        </ul>
+                    </div>
+                </nav>
+                <nav>
+
+                </nav>
+
+            </div>
             <div class="items-catalog">
                 <div class="items-catalog-card">
                     <img src="img/items1.jpg" alt="">
@@ -177,7 +188,7 @@
                     <button class="items-catalog-card-btn"></button>
                 </div>
                 <div class="items-catalog-card">
-                    <img src="img/items2.jpg" alt="">
+                    <img src="img/catalog/image2.jpg" alt="">
                     <div class="items-catalog-card-txt">
                         <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
                         <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
@@ -189,7 +200,7 @@
                     </div>
                     <button class="items-catalog-card-btn"></button>
                 </div>
-                <div class="items-catalog-card">
+                <div class="items-catalog-card items-catalog-card_none">
                     <img src="img/items3.jpg" alt="">
                     <div class="items-catalog-card-txt">
                         <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
@@ -216,7 +227,7 @@
                     <button class="items-catalog-card-btn"></button>
                 </div>
                 <div class="items-catalog-card">
-                    <img src="img/items5.jpg" alt="">
+                    <img src="img/catalog/image5.jpg" alt="">
                     <div class="items-catalog-card-txt">
                         <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
                         <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
@@ -229,7 +240,7 @@
                     <button class="items-catalog-card-btn"></button>
                 </div>
                 <div class="items-catalog-card">
-                    <img src="img/items6.png" alt="">
+                    <img src="img/catalog/image6.jpg" alt="">
                     <div class="items-catalog-card-txt">
                         <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
                         <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
@@ -241,9 +252,51 @@
                     </div>
                     <button class="items-catalog-card-btn"></button>
                 </div>
-                <button class="items-catalog-button">Browse All Product</button>
-
+                <div class="items-catalog-card">
+                    <img src="img/catalog/image7.jpg" alt="">
+                    <div class="items-catalog-card-txt">
+                        <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
+                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym
+                            Ellery
+                            teams
+                            up with Moda Operandi.</p>
+                        <span>$52.00</span>
+                    </div>
+                    <button class="items-catalog-card-btn"></button>
+                </div>
+                <div class="items-catalog-card">
+                    <img src="img/catalog/image8.jpg" alt="">
+                    <div class="items-catalog-card-txt">
+                        <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
+                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym
+                            Ellery
+                            teams
+                            up with Moda Operandi.</p>
+                        <span>$52.00</span>
+                    </div>
+                    <button class="items-catalog-card-btn"></button>
+                </div>
+                <div class="items-catalog-card">
+                    <img src="img/catalog/image9.jpg" alt="">
+                    <div class="items-catalog-card-txt">
+                        <p class="items-catalog-card-txt-heading">ELLERY X M'O CAPSULE</p>
+                        <p class="items-catalog-card-txt-txt">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym
+                            Ellery
+                            teams
+                            up with Moda Operandi.</p>
+                        <span>$52.00</span>
+                    </div>
+                    <button class="items-catalog-card-btn"></button>
+                </div>
             </div>
+            <form>
+                <button class="items-catalog-pages">
+                    <p>&lt <span>1 </span>2 3 4 5 6....20 &gt</p>
+                </button>
+            </form>
         </div>
 
         <div class="service">
@@ -285,24 +338,27 @@
         </div>
 
         <div class="subscribe">
-            <div class="subscribe-block">
-                <div class="subscribe-block-left">
-                    <img src="img/Intersect.png" alt="">
-                    <div class="subscribe-block-left-txt">
-                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+            <div>
+                <div class="subscribe-block">
+                    <div class="subscribe-block-left">
+                        <img src="img/Intersect.png" alt="">
+                        <div class="subscribe-block-left-txt">
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                        </div>
                     </div>
-                </div>
-                <div class="subscribe-block-right">
-                    <div class="subscribe-block-right-title">
-                        SUBSCRIBE
+
+                    <div class="subscribe-block-right">
+                        <div class="subscribe-block-right-title">
+                            SUBSCRIBE
+                        </div>
+                        <div class="subscribe-block-right-txt">
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </div>
+                        <form action="" class="subscribe-block-right-button">
+                            <input type="text" placeholder="Enter Your Email">
+                            <button>Subscribe</button>
+                        </form>
                     </div>
-                    <div class="subscribe-block-right-txt">
-                        FOR OUR NEWLETTER AND PROMOTION
-                    </div>
-                    <form action="" class="subscribe-block-right-button">
-                        <input type="text" placeholder="Enter Your Email">
-                        <button>Subscribe</button>
-                    </form>
                 </div>
             </div>
         </div>
