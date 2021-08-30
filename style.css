@@ -296,107 +296,79 @@
 
 /* Product--------------carousel------------------- */
 
-/* Тут начинается наша карусель. Блок .carousel-wrapper спозиционирован относительно, абертки .carousel-item абсолютно.
-. */
-.carousel-wrapper {
-    position: relative;
+.page-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F7F7F7;
+    border: 1px solid #EAEAEA;
+    min-height: 777px; 
 }
-    /* Абсолютно спозиционированные блоки получают высоту и ширину от родителя.
-    Мы сделали их прозрачными по умолчанию, и потом они будут плавно появляться по нажатию на ссылки .arrow-prevи .arrow-next. */
-.carousel-item {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 25px 50px;
-    opacity: 0;
-    transition: all0.5sease-in-out;
+        
+.page-carousel-control {
+    border: none;
+    cursor: pointer; 
 }
-    /* Заметили padding слева и справа по 50px? Таким способом мы можем позиционировать наши ссылки! Каждая будет по 50px шириной. Кроме того, я использую пустые ссылки с фоновым рисунком таким образом, что ссылки выглядят как стрелки. Проверьте, поменяли ли вы URL ссылок с оригинальным URL, чтобы ваши ссылки не были просто прозрачными прямоугольниками. */
-.arrow {
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 50px;
-    height: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    background: url("/carousel-arrow-dark.png")50%50%/20pxno-repeat;
-} 
-    /* Давайте вернем нашу стрелку налево. */
-&.arrow-prev {
-    left:0;
+   
+.control {
+    border: none;
+    background-color: transparent; 
 }
-    
-    /* А вторую направо. Поскольку я использую одно и то же изображение для стрелки, я поворачиваю его на 180 градусов. */
-&.arrow-next {
-    right:0;
-    -webkit-transform:rotate(180deg);
-    transform:rotate(180deg);
-}
-    
-    /* Мне очень нравится, как слайды карусели смотрятся на темном фоне, и если блок .carousel-itemимеет класс 'light',
-    мы изменим его текст на белый и используем белые стрелки вместо серых. Проверьте еще раз, правильно ли указан путь к изображению стрелки */
-&.light { 
-    color:white;
-}
-    
-.arrow {
-    background:url("/carousel-arrow-light.png")50%50%/20pxno-repeat;
-}
+ 
+/* .control:hover {
+    background-image: url(img/product/group-pink.png);
+} */
 
-    
-    /* Напишем медиа-запрос для изменения размера стрелок на устройствах с меньшим размером экрана.*/
-    
-@media(max-width:480px) {
-    .arrow,&.light.arrow {
-    background-size: 10px;
-    background-position: 10px50%;
-    }
+.mirror-x {
+    transform: scale(-1, 1);
 }
-    
-    /* Установим целям для ссылок значение display: none; Таким образом, мы избавляемся от постоянного перепрыгивания браузера в самый верх карусели при каждом нажатии на стрелки. Это свойство действует для любых элементов, чей идентификатор начинается на 'target-item'. */
-[id^="target-item"] {
-    display:none;
-}
-    
-    /* Выше мы сделали все наши слайды карусели прозрачными, а это значит, что во время загрузки карусели мы будем получать вместо нее большое пустое поле.
-    Изменим значение прозрачности для первого слайда на 1 для отображения. Так же устанавливаем z-index значение 2, позиционируя его выше остальных слайдов. */
-.item-1 {
-    z-index:2;
-    opacity:1;
-}
-    
-    /* Но нам не нужно, чтобы первый слайд всегда имел значение прозрачностиopacity: 1; в противном случае нам придется пробираться через этот слайд, во время ротации остальных. */
-*:target~.item-1 { 
-    opacity:0;
-}
-    
-    /* ..но если #target-item-1 в фокусе, и мы хотим показать первый слайд, тогда выбираем его с помощью значка ~ и устанавливаем прозрачность опять в 1:-) */
-#target-item-1:target~.item-1 {
-    opacity:1;
-}
-    
-    /* Если другие target-item-# в фокусе, выбираем их используя ~ селектор, плавно показываем, и размещаем их сверху с помощьюz-index: 3.
-    Тут вы можете добавить дополнительные spanс идентификатором target-item, если их у вас будет больше трех. Может сразу и добавить 10 штук.. */
-#target-item-2:target~.item-2,#target-item-3:target~.item-3{
-    z-index:3;
-    opacity:1;
-}
-
 
 /* Product==============carousel=================== */
+
+/* Cart------------------cart---------------------- */
+
+.cart-box {
+    max-width: 1140px;
+    height: 775px;
+    display: flex;
+    position: relative;
+}
+
+.cart-left-up {
+    width: 652px;
+    height: 306px;
+    display: flex;
+    /* flex-direction: column; */
+    right: 0;
+}
+
+.cart-left-up > div {
+    flex-direction: column;
+}
+
+.cart-left-up-img {
+    max-width: 262px;
+    height: 306px;
+    /* position: absolute; */
+}
+
+/* Cart==================cart====================== */
 
 /* Product-------------collection------------------ */
 
 .collection-box {
     max-width: 1141px;
+    height: 600px;
     align-items: center;
     display: flex;
     flex-direction: column;
     position: relative;
     margin: 0 auto;
     margin-top: -65px;
+    z-index: 4;
+    border: 1px solid #EAEAEA;
+    background: #FFFFFF;
 }
 
 .collection-heading {
@@ -406,6 +378,7 @@
     font-weight: 300;
     line-height: 17px;
     color: #F16D7F;
+    padding-top: 65px;
 }
 
 .collection-line-up {
@@ -586,7 +559,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 65px;
 }
 
 .items-catalog-card {
@@ -685,11 +657,6 @@
 #filter-switch {
     opacity: 0;
 }
-
-/* #filter-switch:checked ~ .items-filter-btn > span:before {
-    top: 0;
-    transform: rotate(0);
-} */
 
 #filter-switch:checked ~ .items-filter-box {
     visibility: visible;
@@ -919,6 +886,10 @@
     padding-bottom: 120px;
     background-image: url(img/photo\ subscribe.jpg);
     background-size: cover;
+}
+
+.subscribe-block-margin {
+    margin-top: 113px;
 }
     
 .subscribe-block-left {
