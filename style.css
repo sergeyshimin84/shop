@@ -244,15 +244,13 @@
 }
 
 .arrivals-block-left {
-    margin-right: 737px;
+    margin-right: 773px;
     color: #F16D7F;
     font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 .arrivals-block-right > ul {
@@ -334,10 +332,7 @@
     display: flex;
     position: relative;
     margin: 0 auto;
-}
-
-.cart-box > div {
-    padding: 96px 128px 0 0;
+    margin-top: 96px;
 }
 
 .cart-left {
@@ -389,6 +384,10 @@
     margin-top: 40px;
 }
 
+.cart-left-btn {
+    padding-top: 72px;
+}
+
 .cart-left-btn button {
     font-family: Lato;
     font-size: 14px;
@@ -407,10 +406,115 @@
 
 .cart-left-btn__end {
     width: 225px;
+    margin-left: 28%;
 }
 
+.cart-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 128px;
+}
 
+.cart-right-form {
+    width: 360px;
+    height: 272px;
+}
 
+.cart-right-form > h3 {
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    color: #222222;
+    margin-top: 15px;
+}
+
+.cart-right-form > form {
+    padding-top: 20px;
+}
+
+.cart-right-form input {
+    width: 360px;
+    height: 45px;
+    padding-left: 17px;
+    border: 1px solid #A4A4A4;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    color: #222222;
+}
+
+.cart-right-form > button {
+    width: 100px;
+    height: 34px;
+    border: 1px solid #A4A4A4;
+    background: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 13px;
+}
+
+.cart-right-order {
+    width: 360px;
+    height: 214px;
+    margin-top: 57px;
+    background: #F5F3F3;
+}
+
+.cart-right-order-txt {
+    font-family: Lato;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    color: #4A4A4A;
+    margin-top: 39px;
+    /* left: 34px; */
+    margin-left: 218px;
+}
+
+.cart-right-order-txt-grand {
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    color: #222222;
+    margin-top: 12px;
+    margin-left: 153px;
+
+}
+
+.cart-right-order-txt-grand > span {
+    color: #F16D7F;
+}
+
+.cart-right-order > hr {
+    width: 275px;
+    background: #E2E2E2;
+    /* margin-top: 21px; */
+    margin: 12px auto 0;
+}
+
+.cart-right-order > button {
+    width: 273px;
+    height: 50px;
+    border: 1px solid #F16D7F;
+    background: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    color: #FFFFFF;
+    /* margin-top: 17px; */
+    margin: 17px 0 0 12%;
+}
 
 
 
@@ -1160,7 +1264,7 @@
     }
 
     .arrivals-block-left {
-        margin-right: 333px;
+        margin-right: 14%;
     }
 
     .items-catalog {
