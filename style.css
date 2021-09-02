@@ -329,7 +329,7 @@
 
 .cart-box {
     max-width: 1140px;
-    height: 775px;
+    /* height: 775px; */
     display: flex;
     position: relative;
     margin: 0 auto;
@@ -337,7 +337,7 @@
 }
 
 .cart-left {
-    width: 652px;
+    max-width: 652px;
     height: 306px;
     display: flex;
     right: 0;
@@ -407,17 +407,17 @@
 
 .cart-left-btn__end {
     width: 225px;
-    margin-left: 28%;
+    margin-left: 18%;
 }
 
 .cart-right {
     display: flex;
     flex-direction: column;
-    margin-left: 128px;
+    margin-left: 8%;
 }
 
 .cart-right-form {
-    width: 360px;
+    max-width: 360px;
     height: 272px;
 }
 
@@ -461,7 +461,7 @@
 }
 
 .cart-right-order {
-    width: 360px;
+    max-width: 360px;
     height: 214px;
     margin-top: 57px;
     background: #F5F3F3;
@@ -520,7 +520,7 @@
 
 .registration-box {
     max-width: 1140px;
-    height: 675px;
+    /* height: 675px; */
     display: flex;
     margin: 0 auto;
     padding-top: 64px;
@@ -1426,6 +1426,42 @@
     .page-carousel {
         max-width: 767px;
     }
+
+    .cart-box {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 59px;
+        max-width: 767px;
+    }
+
+    .cart-right {
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .registration-box {
+        max-width: 767px;
+        padding-top: 40px;
+    }
+
+    .registration-info {
+        margin-left: 20px;
+    }
+
+    .registration-info > h2 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .registration-info > p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .registration-info li {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1526,6 +1562,62 @@
 
     .page-carousel {
         max-width: 374px;
+    }
+
+    .cart-left {
+        max-width: 358px;
+        height: 188px;
+    }
+
+    .cart-left h2 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .cart-left li {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 3px;
+    }
+
+    .cart-left > img {
+        max-width: 144px;
+        height: 188px;
+    }
+
+    .cart-left-btn button {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        height: 33px;
+    }
+
+    .cart-left-btn__start {
+        width: 175px;
+    }
+
+    .cart-left-btn__end {
+        width: 175px;
+        margin-left: 2%;
+    }
+
+    .cart-left-btn {
+        padding-top: 30px;
+        display: flex;
+    }
+
+    .cart-right {
+        flex-direction: column;
+        max-width: 374px;
+    }
+
+    .registration-box {
+        flex-direction: column;
+    }
+
+    .registration-info {
+        margin-left: 0;
+        margin-top: 40px;
     }
 }
 
