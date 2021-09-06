@@ -692,11 +692,22 @@
     margin-top: 65px;
 }
 
-.collection-menu {
-    max-width: 400px;
+/* доработка-----------меню на странице Product */
+#collection-menu-switch {
+    opacity: 0;
 }
 
-.collection-menu-list {
+#collection-menu-switch:checked {
+    visibility: visible;
+}
+
+
+.collection-menu {
+    max-width: 400px;
+    margin-top: 65px;
+}
+
+.collection-menu-switch {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -704,12 +715,7 @@
     justify-content: space-between;
 }
 
-.collection-menu-list li:after {
-    padding: 0 23px 0 8px;
-    content: url(img/catalog/vector2.png);
-}
-
-.collection-menu-sublist {
+.collection-menu span {
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
@@ -718,6 +724,7 @@
     color: #6F6E6E;
     text-align: justify;
 }
+/* доработка=============меню на странице Product */
 
 .collection-btn {
     width: 211px;
@@ -882,6 +889,12 @@
     color: #000000;
     margin-top: 25px;
 }
+
+/* доработка----------добавлен отступ в карточках */
+.items-catalog-card-txt {
+    padding-left: 16px;
+}
+/* доработка==========добавлен отступ в карточках */
 
 .items-catalog-card-txt-txt {
     font-family: Lato;
