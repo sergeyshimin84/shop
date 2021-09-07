@@ -431,9 +431,6 @@
     margin-top: 15px;
 }
 
-.cart-right-form > form {
-    padding-top: 20px;
-}
 
 .cart-right-form input {
     width: 360px;
@@ -446,9 +443,11 @@
     font-weight: 300;
     line-height: 16px;
     color: #222222;
+    margin-top: 20px; 
 }
+/* доработка------------отступ */
 
-.cart-right-form > button {
+.cart-right-form button {
     width: 100px;
     height: 34px;
     border: 1px solid #A4A4A4;
@@ -458,6 +457,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 13px;
+    margin-top: 24px;
 }
 
 .cart-right-order {
