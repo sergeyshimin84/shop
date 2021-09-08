@@ -1339,9 +1339,13 @@
 
 @media (max-width: 768px) {
 
+    .header {
+        padding: 0 40px 0 30px;
+    }
+    /* доработка============отступы */
+
     .header-left {
         margin-left: 0;
-        padding-left: 32px;
     }
 
     .header-right {
@@ -1483,6 +1487,10 @@
 }
 
 @media (max-width: 375px) {
+
+    .header {
+        padding: 0 16px 0 16px;
+    }
 
     .header-right-account, .header-right-cart, .header-right-cart-number {
         display: none;
