@@ -302,22 +302,26 @@
     align-items: center;
     background: #F7F7F7;
     border: 1px solid #EAEAEA;
-    min-height: 777px; 
 }
         
 .page-carousel-control {
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
+    position: absolute;
+}
+
+.page-carousel-product {
+    margin: 0 auto;
 }
    
 .control {
     border: none;
-    background-color: transparent; 
+    background-color: transparent;
 }
- 
-/* .control:hover {
-    background-image: url(img/product/group-pink.png);
-} */
+
+.page-carousel > div:nth-child(3) {
+    right: 0;
+}
 
 .mirror-x {
     transform: scale(-1, 1);
@@ -329,7 +333,6 @@
 
 .cart-box {
     max-width: 1140px;
-    /* height: 775px; */
     display: flex;
     position: relative;
     margin: 0 auto;
@@ -1586,8 +1589,19 @@
         margin-top: 40px;
     }
 
+    .page-carousel-product img {
+        object-fit: contain;
+        width: 374px;
+        height: 454px;
+    }
+
     .page-carousel {
         max-width: 374px;
+        max-height: 474px;
+    }
+
+    .page-carousel-control {
+        position: absolute;
     }
 
     .cart-left {
